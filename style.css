@@ -128,10 +128,10 @@
     align-items:center;
     justify-content:space-between;
   }
-  .topbar .brand-name{font-size:14px;}
+  .topbar .brand-name{font-size:16px;}
   .menu-btn{
     background:none;border:1px solid var(--border);color:var(--text);
-    padding:6px 10px;border-radius:var(--radius);font-family:var(--mono);font-size:12px;
+    padding:6px 10px;border-radius:var(--radius);font-family:var(--mono);font-size:14px;
     cursor:pointer;
   }
   .mobile-nav{
@@ -142,7 +142,7 @@
   }
   .mobile-nav.open{display:block;}
   .mobile-nav a{
-    display:block;padding:10px 12px;font-family:var(--mono);font-size:13px;color:var(--text-muted);
+    display:block;padding:10px 12px;font-family:var(--mono);font-size:15px;color:var(--text-muted);
   }
 
   /* ---------- main content ---------- */
@@ -154,7 +154,7 @@
   }
   .file-tag{
     font-family:var(--mono);
-    font-size:12px;
+    font-size:13px;
     color:var(--text-dim);
     margin-bottom:18px;
     display:flex;
