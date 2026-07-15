@@ -285,7 +285,7 @@
   }
   .card-head .tdot{width:8px;height:8px;}
   .card-body{padding:18px 18px 20px;}
-  .card-title{font-size:17px;font-weight:700;margin-bottom:8px;}
+  .card-title{font-size:17px;font-weight:700;margin-bottom:8px;color:white;}
   .card-desc{font-size:13.5px;color:var(--text-muted);margin-bottom:14px;min-height:60px;}
   .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px;}
   .card-tags span{
