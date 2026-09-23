@@ -134,6 +134,23 @@
     padding:6px 10px;border-radius:var(--radius);font-family:var(--mono);font-size:14px;
     cursor:pointer;
   }
+  .topbar-actions{display:flex;align-items:center;gap:8px;}
+  .lang-switch{
+    border:1px solid var(--border);color:var(--cyan);
+    padding:6px 10px;border-radius:var(--radius);font-family:var(--mono);font-size:14px;
+    transition:border-color .15s ease;
+  }
+  .lang-switch:hover{border-color:var(--cyan);}
+
+  /* language toggle (sidebar) */
+  .lang-toggle{
+    display:inline-flex;margin-bottom:14px;
+    border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+  }
+  .lang-opt{padding:5px 12px;font-size:11px;color:var(--text-dim);transition:color .15s ease, background .15s ease;}
+  a.lang-opt:hover{color:var(--text);background:var(--bg-elev-2);}
+  .lang-opt.active{background:var(--cyan);color:#04120D;font-weight:700;}
+
   .mobile-nav{
     display:none;
     background:var(--bg-elev);
@@ -304,6 +321,48 @@
     display:flex;align-items:center;gap:5px;
   }
   .card-links a:hover{color:var(--cyan);}
+
+  .proj-more{
+    margin-top:24px;font-family:var(--mono);font-size:13px;color:var(--text-muted);
+  }
+  .proj-more a{color:var(--cyan);}
+  .proj-more a:hover{text-decoration:underline;}
+
+  /* ---------- experience ---------- */
+  .timeline{list-style:none;border-left:1px solid var(--border);margin-left:4px;}
+  .tl-item{position:relative;padding:0 0 36px 28px;}
+  .tl-item:last-child{padding-bottom:0;}
+  .tl-item::before{
+    content:'';position:absolute;left:-5px;top:6px;
+    width:9px;height:9px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--cyan);
+  }
+  .tl-meta{
+    display:flex;gap:12px;flex-wrap:wrap;
+    font-family:var(--mono);font-size:12px;color:var(--text-dim);margin-bottom:4px;
+  }
+  .tl-date{color:var(--amber);}
+  .tl-role{font-size:18px;font-weight:700;}
+  .tl-org{font-family:var(--mono);font-size:13px;color:var(--pink);margin-bottom:12px;}
+  .tl-list{display:flex;flex-direction:column;gap:8px;max-width:680px;}
+  .tl-list li{
+    position:relative;padding-left:18px;
+    font-size:15px;color:var(--text-muted);
+  }
+  .tl-list li::before{content:'›';position:absolute;left:0;color:var(--cyan);font-family:var(--mono);}
+  .tl-list strong{color:var(--text);font-weight:600;}
+
+  /* ---------- education ---------- */
+  .edu-grid{
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;
+  }
+  .edu-card{
+    background:var(--bg-elev);border:1px solid var(--border);border-radius:8px;
+    padding:20px 22px;display:flex;flex-direction:column;gap:6px;
+  }
+  .edu-years{font-family:var(--mono);font-size:12px;color:var(--amber);}
+  .edu-title{font-size:16px;font-weight:700;line-height:1.4;}
+  .edu-school{font-family:var(--mono);font-size:13px;color:var(--pink);}
 
   /* ---------- skills ---------- */
   .skills-json{
